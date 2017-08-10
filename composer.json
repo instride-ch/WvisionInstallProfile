@@ -1,0 +1,9 @@
+{
+  "name": "wvision/pimcore5-install-profile",
+  "description": "W-Vision Install Profile for Pimcore 5",
+  "type": "pimcore-install-profile",
+  "license": "GPL-3.0",
+  "require": {
+    "php": ">=7.0"
+  }
+}
