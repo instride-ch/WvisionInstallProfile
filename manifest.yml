@@ -1,4 +1,4 @@
-name: W-Vision
+name: Wvision Web Project
 files:
     add:
         - app/AppKernel.php
@@ -8,6 +8,7 @@ files:
         - var/config/*
         - web/static
         - web/var/assets
+# should be done with WvisionMagic
 db:
     data_files:
         - dump/data.sql
