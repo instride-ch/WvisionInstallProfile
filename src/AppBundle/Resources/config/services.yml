@@ -1,0 +1,12 @@
+services:
+
+    # auto-register all controllers as services
+    AppBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
+    # Templating
+    app.language_switcher:
+        class: AppBundle\Templating\LanguageSwitcher
+        arguments: ['@pimcore.document_service']
