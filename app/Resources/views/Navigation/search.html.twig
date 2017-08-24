@@ -1,0 +1,8 @@
+<div>
+    <a class="uk-navbar-toggle" href="#" data-uk-search-icon></a>
+    <div class="uk-drop" data-uk-drop="mode: click; pos: left-center; offset: 0">
+        <form class="uk-search uk-search-navbar uk-width-1-1" action="{{ pimcore_url({ _locale: app.request.locale|urlLocale }, 'app_search') }}">
+            <input class="uk-search-input" type="search" name="q" placeholder="{{ 'app.navigation.search-placeholder'|trans }}" autofocus>
+        </form>
+    </div>
+</div>

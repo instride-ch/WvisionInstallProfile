@@ -1,0 +1,41 @@
+{% set navigation = pimcore_build_nav(document, navStartNode) %}
+{% set menuRenderer = pimcore_nav_renderer('menu') %}
+
+<div id="off-canvas" data-uk-offcanvas="overlay: true; flip: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <div class="uk-margin">
+            <form class="uk-search uk-search-default uk-width-1-1" action="{{ pimcore_url({ _locale: app.request.locale|urlLocale }, 'app_search') }}">
+                <span class="uk-search-icon-flip" data-uk-search-icon></span>
+                <input class="uk-search-input" type="search" name="q" placeholder="{{ 'app.navigation.search-placeholder'|trans }}" autofocus>
+            </form>
+        </div>
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            {% for page in navigation %}
+                {% if (page.isVisible and menuRenderer.accept(page)) %}
+
+                    <li class="{% if page.hasPages %}uk-parent{% endif %} {% if page.isActive(true) %}uk-active{% endif %}">
+                        <a href="{{ page.href }}">{{ page.label }}</a>
+
+                        {% if page.hasPages %}
+                            <ul class="uk-nav-sub">
+                                {% for child in page.pages %}
+                                    {% if (child.isVisible and menuRenderer.accept(child)) %}
+
+                                        <li class="{% if child.isActive(true) %}uk-active{% endif %}">
+                                            <a href="{{ child.href }}" target="{{ child.target }}">Active</a>
+                                        </li>
+
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>

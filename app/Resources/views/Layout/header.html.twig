@@ -1,0 +1,43 @@
+{% set navStartNode = document.getProperty('navStartNode') %}
+{% if navStartNode is empty %}
+    {% set navStartNode = pimcore_document(1) %}
+{% endif %}
+
+<div class="page-loader uk-background-primary"><div class="uk-position-center" data-uk-spinner="ratio: 1.5"></div></div>
+
+<div data-uk-sticky="sel-target: .main-nav; cls-active: uk-navbar-sticky">
+    <nav class="main-nav uk-navbar-container" data-uk-navbar="dropbar: true">
+
+        <div class="uk-navbar-left">
+
+            <a class="uk-navbar-item uk-logo" href="{{ navStartNode }}">
+                <img width="150" height="40" src="{{ asset('build/images/logo.svg') }}" alt="Pimcore GmbH" class="uk-preserve" data-uk-svg>
+            </a>
+
+            <div class="uk-visible@s">
+                {% include 'Navigation/navbar.html.twig' %}
+            </div>
+
+        </div>
+
+        <div class="uk-navbar-right">
+
+            <div class="uk-visible@s">
+                {% include 'Navigation/search.html.twig' %}
+            </div>
+
+            {% include 'Navigation/language.html.twig' %}
+
+            <div class="uk-hidden@s">
+                <a class="uk-navbar-toggle" href="#off-canvas" data-uk-toggle>
+                    <span data-uk-navbar-toggle-icon></span>
+                </a>
+
+                {% include 'Navigation/offcanvas.html.twig' %}
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="uk-navbar-dropbar"></div>
+</div>

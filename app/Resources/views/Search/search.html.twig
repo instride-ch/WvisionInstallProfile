@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <section class="search uk-section uk-section-muted uk-height-1-1">
+        <div class="uk-container">
+
+            {% if query %}
+                {{ render(controller('lucene_search.controller.frontend.list:getResultAction')) }}
+            {% else %}
+                <h3 class="uk-margin-remove">{{ 'app.search.no-results'|trans }}</h3>
+            {% endif %}
+
+        </div>
+    </section>
+
+{% endblock %}
