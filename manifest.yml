@@ -3,12 +3,6 @@ files:
     add:
         - app/AppKernel.php
         - app/Resources/views
+        - app/Resources/LuceneSearchBundle
         - src/AppBundle
-        - var/classes
         - var/config/*
-        - web/static
-        - web/var/assets
-# should be done with WvisionMagic
-db:
-    data_files:
-        - dump/data.sql
