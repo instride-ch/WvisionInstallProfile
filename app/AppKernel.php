@@ -27,7 +27,5 @@ class AppKernel extends Kernel
         if (class_exists('\\AppBundle\\AppBundle')) {
             $collection->addBundle(new \AppBundle\AppBundle);
         }
-
-        $collection->addBundle(new \Hampe\Bundle\ZurbInkBundle\HampeZurbInkBundle());
     }
 }
