@@ -3,7 +3,7 @@
 {% set imprintBlock = pimcore_block('imprintBlock') %}
 
 {% block content %}
-    <section class="uk-section uk-section-default">
+    <div class="uk-section uk-section-default">
         <div class="uk-container uk-container-small uk-position-relative">
             {% for i in pimcore_iterate_block(imprintBlock) %}
 
@@ -12,7 +12,7 @@
 
                 {% if editmode or not imprintText.isEmpty() %}
                     <div id="imprint-{{ loop.index }}" class="uk-padding-small uk-padding-remove-horizontal">
-                        {% if loop.index0 %}<hr class="uk-margin-medium-bottom">{% endif %}
+                        {% if loop.index > 1 %}<hr class="uk-margin-medium-bottom">{% endif %}
 
                         {% if editmode or not imprintTitle.isEmpty() %}
                             <h3>{{ imprintTitle|raw }}</h3>
@@ -45,5 +45,5 @@
 
             {% endif %}
         </div>
-    </section>
+    </div>
 {% endblock %}
