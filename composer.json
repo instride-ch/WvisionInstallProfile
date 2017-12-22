@@ -1,5 +1,5 @@
 {
-  "name": "wvision/wvision-web-project",
+  "name": "w-vision/wvision-web-project",
   "description": "Standard Web Project for Pimcore 5",
   "type": "pimcore-install-profile",
   "license": "GPL-3.0",
