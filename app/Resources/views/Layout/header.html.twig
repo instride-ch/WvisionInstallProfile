@@ -3,7 +3,9 @@
     {% set navStartNode = pimcore_document(1) %}
 {% endif %}
 
-<div class="page-loader uk-background-primary"><div class="uk-position-center" data-uk-spinner="ratio: 1.5"></div></div>
+<div id="page-loader" class="uk-position-fixed uk-position-cover uk-background-primary">
+    <div class="uk-position-center" data-uk-spinner="ratio: 1.5"></div>
+</div>
 
 <div data-uk-sticky="sel-target: .main-nav; cls-active: uk-navbar-sticky">
     <nav class="main-nav uk-navbar-container" data-uk-navbar="dropbar: true">
