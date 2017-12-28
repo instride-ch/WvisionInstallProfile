@@ -15,7 +15,7 @@
             {% for page in navigation %}
                 {% if (page.isVisible and menuRenderer.accept(page)) %}
 
-                    <li class="{% if page.hasPages %}uk-parent{% endif %} {% if page.isActive(true) %}uk-active{% endif %}">
+                    <li class="{{ page.hasPages ? 'uk-parent' }} {{ page.isActive(true) ? 'uk-active' }}">
                         <a href="{{ page.href }}">{{ page.label }}</a>
 
                         {% if page.hasPages %}
@@ -23,7 +23,7 @@
                                 {% for child in page.pages %}
                                     {% if (child.isVisible and menuRenderer.accept(child)) %}
 
-                                        <li class="{% if child.isActive(true) %}uk-active{% endif %}">
+                                        <li class="{{ child.isActive(true) ? 'uk-active' }}">
                                             <a href="{{ child.href }}" target="{{ child.target }}">Active</a>
                                         </li>
 

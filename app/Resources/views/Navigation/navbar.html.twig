@@ -6,20 +6,20 @@
         {% if (page.isVisible and menuRenderer.accept(page)) %}
             {% if not page.hasPages %}
 
-                <li class="{% if page.isActive(true) %}uk-active{% endif %}">
+                <li class="{{ page.isActive(true) ? 'uk-active' }}">
                     <a href="{{ page.href }}">{{ page.label }}</a>
                 </li>
 
             {% else %}
 
-                <li class="uk-parent{% if page.isActive(true) %} uk-active{% endif %}">
+                <li class="uk-parent {{ page.isActive(true) ? 'uk-active' }}">
                     <a href="#">{{ page.label }}</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             {% for child in page.pages %}
                                 {% if (child.isVisible and menuRenderer.accept(child)) %}
 
-                                    <li class="{% if child.isActive(true) %}uk-active{% endif %}">
+                                    <li class="{{ child.isActive(true) ? 'uk-active' }}">
                                         <a href="{{ child.href }}" target="{{ child.target }}">Active</a>
                                     </li>
 

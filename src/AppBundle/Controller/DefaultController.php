@@ -13,20 +13,15 @@
 namespace AppBundle\Controller;
 
 use Pimcore\Controller\FrontendController;
-use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends FrontendController
 {
     /**
-     * @param Request $request
-     *
      * @return string The template to be rendered
      */
-    public function defaultAction(Request $request)
+    public function defaultAction()
     {
-        return $this->renderTemplate('Default/default.html.twig', [
-            // 'params' => 'additional-data'
-        ]);
+        return $this->renderTemplate('Default/default.html.twig');
     }
 
     /**

@@ -19,7 +19,6 @@ class SearchController extends FrontendController
 {
     /**
      * @param Request $request
-     *
      * @return string The template to be rendered
      */
     public function searchAction(Request $request)
