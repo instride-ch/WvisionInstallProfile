@@ -7,11 +7,11 @@ return [
         "domain" => "",
         "redirect_to_maindomain" => FALSE,
         "language" => "en",
-        "validLanguages" => "de_CH",
+        "validLanguages" => "de",
         "fallbackLanguages" => [
-            "de_CH" => ""
+            "de" => "de_CH"
         ],
-        "defaultLanguage" => "de_CH",
+        "defaultLanguage" => "de",
         "loginscreencustomimage" => "//www.w-vision.ch/static/img/backend/admin-bg.jpg",
         "disableusagestatistics" => FALSE,
         "debug_admin_translations" => FALSE,
