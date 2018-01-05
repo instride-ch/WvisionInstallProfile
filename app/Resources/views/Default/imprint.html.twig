@@ -27,8 +27,8 @@
             {% if not editmode and not imprintBlock.isEmpty() %}
 
                 {# Scrollspy navigation #}
-                <div class="uk-position-absolute uk-position-top-right uk-visible@l">
-                    <div data-uk-sticky="offset: 150">
+                <div class="uk-position-absolute uk-position-top-right uk-height-1-1 uk-visible@l">
+                    <div data-uk-sticky="offset: 150; bottom: true">
                         <ul class="uk-nav uk-nav-default" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 65">
 
                             {% for element in imprintBlock.getElements() %}
