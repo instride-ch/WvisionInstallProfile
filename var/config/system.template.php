@@ -113,7 +113,7 @@ return [
             "auth" => [
                 "method" => NULL,
                 "username" => "",
-                "password" => NULL
+                "password" => ""
             ]
         ],
         "debug" => NULL,
