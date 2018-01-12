@@ -12,12 +12,50 @@ return [
             "de" => "de_CH"
         ],
         "defaultLanguage" => "de",
-        "loginscreencustomimage" => "//www.w-vision.ch/static/img/backend/admin-bg.jpg",
+        "loginscreencustomimage" => "//www.w-vision.ch/static/img/backend/admin_pimcore5.jpg",
         "disableusagestatistics" => FALSE,
         "debug_admin_translations" => FALSE,
         "devmode" => FALSE,
         "instanceIdentifier" => "",
         "show_cookie_notice" => FALSE
+    ],
+    "branding" => [
+        "color_login_screen" => "#0d64aa",
+        "color_admin_interface" => "#0d64aa",
+    ],
+    "applicationlog" => [
+        "mail_notification" => [
+            "send_log_summary" => FALSE,
+            "filter_priority" => NULL,
+            "mail_receiver" => ""
+        ],
+        "archive_treshold" => "30",
+        "archive_alternative_database" => ""
+    ],
+    "email" => [
+        "sender" => [
+            "name" => "w-vision AG",
+            "email" => "support@w-vision.ch"
+        ],
+        "return" => [
+            "name" => "",
+            "email" => ""
+        ],
+        "method" => "mail",
+        "smtp" => [
+            "host" => "",
+            "port" => "",
+            "ssl" => NULL,
+            "name" => "",
+            "auth" => [
+                "method" => NULL,
+                "username" => "",
+                "password" => NULL
+            ]
+        ],
+        "debug" => [
+            "emailaddresses" => "support@w-vision.ch"
+        ]
     ],
     "documents" => [
         "versions" => [
@@ -63,37 +101,15 @@ return [
         "excludePatterns" => "",
         "excludeCookie" => ""
     ],
+    "webservice" => [
+        "enabled" => FALSE
+    ],
     "httpclient" => [
         "adapter" => "Socket",
         "proxy_host" => "",
         "proxy_port" => "",
         "proxy_user" => "",
         "proxy_pass" => ""
-    ],
-    "email" => [
-        "sender" => [
-            "name" => "w-vision",
-            "email" => "support@w-vision.ch"
-        ],
-        "return" => [
-            "name" => "",
-            "email" => ""
-        ],
-        "method" => "mail",
-        "smtp" => [
-            "host" => "",
-            "port" => "",
-            "ssl" => NULL,
-            "name" => "",
-            "auth" => [
-                "method" => NULL,
-                "username" => "",
-                "password" => NULL
-            ]
-        ],
-        "debug" => [
-            "emailaddresses" => "support@w-vision.ch"
-        ]
     ],
     "newsletter" => [
         "sender" => [
@@ -118,17 +134,5 @@ return [
         ],
         "debug" => NULL,
         "usespecific" => FALSE
-    ],
-    "webservice" => [
-        "enabled" => FALSE
-    ],
-    "applicationlog" => [
-        "mail_notification" => [
-            "send_log_summary" => FALSE,
-            "filter_priority" => NULL,
-            "mail_receiver" => ""
-        ],
-        "archive_treshold" => "30",
-        "archive_alternative_database" => ""
     ]
 ];
