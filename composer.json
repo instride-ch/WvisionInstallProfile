@@ -2,8 +2,13 @@
   "name": "w-vision/wvision-web-project",
   "description": "Standard Web Project for Pimcore 5",
   "type": "pimcore-install-profile",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "require": {
     "php": ">=7.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
   }
 }
