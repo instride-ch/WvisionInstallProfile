@@ -3,7 +3,7 @@
 {# Widgets #}
 
 {% block form_widget_simple -%}
-    {% if type is not defined or type not in ['file', 'hidden'] %}
+    {% if type is not defined or type not in ['file', 'hidden', 'range'] %}
         {%- set attr = attr|merge({class: (attr.class|default('') ~ ' uk-input')|trim}) -%}
     {% endif %}
 
@@ -216,8 +216,8 @@
         {% if label is not same as(false) and label is empty %}
             {%- if label_format is not empty -%}
                 {% set label = label_format|replace({
-                '%name%': name,
-                '%id%': id,
+                    '%name%': name,
+                    '%id%': id,
                 }) %}
             {%- else -%}
                 {% set label = name|humanize %}
