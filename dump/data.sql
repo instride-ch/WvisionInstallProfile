@@ -1,5 +1,6 @@
 SET NAMES utf8mb4;
 
+-- Documents
 INSERT INTO `documents` VALUES (1, 0, 'page', '', '/', 999999, 1, 1368522989, 1505139865, 1, 2);
 INSERT INTO `documents` VALUES (2, 1, 'page', 'impressum', '/', 0, 1, 1505139774, 1505139846, 2, 2);
 INSERT INTO `documents` VALUES (3, 1, 'page', 'error', '/', 1, 1, 1503510199, 1505139888, 2, 2);
@@ -7,6 +8,7 @@ INSERT INTO `documents_page` VALUES (1, NULL, '@AppBundle\\Controller\\DefaultCo
 INSERT INTO `documents_page` VALUES (2, NULL, '@AppBundle\\Controller\\DefaultController', 'imprint', NULL, 'Impressum', '', 'a:0:{}', NULL, NULL, '', 0);
 INSERT INTO `documents_page` VALUES (3, NULL, '@AppBundle\\Controller\\ErrorController', 'error', NULL, 'Error', '', 'a:0:{}', NULL, NULL, '', 0);
 
+-- Assets
 INSERT INTO `assets` VALUES (1, 0, 'folder', '', '/', NULL, 1368522989, 1368522989, 1, 1, '', 0);
 INSERT INTO `assets` VALUES (2, 1, 'folder', 'documents', '/', NULL, 1505140576, 1505140576, 2, 2, 'a:0:{}', 0);
 INSERT INTO `assets` VALUES (3, 1, 'folder', 'images', '/', NULL, 1505140572, 1505140572, 2, 2, 'a:0:{}', 0);
@@ -20,10 +22,17 @@ INSERT INTO `assets` VALUES (10, 3, 'image', 'schloss-moritzburg.jpg', '/images/
 INSERT INTO `assets` VALUES (11, 3, 'image', 'winter-bus.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
 INSERT INTO `assets` VALUES (12, 3, 'image', 'sunset.jpeg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
 
+-- Objects
 INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 1368522989, 1, 1, 0, '', NULL);
 
+-- Properties
 INSERT INTO `properties` VALUES (1, 'document', '/', 'language', 'text', 'de', 1);
 
+-- Translations
+INSERT INTO translations_website VALUES ('app.navigation.language_switcher.language', 'de', 'Sprache', 1368608505, 1368608505);
+INSERT INTO translations_website VALUES ('app.navigation.fulltext_search.placeholder', 'de', 'Suchen ...', 1368608505, 1368608505);
+
+-- Users
 UPDATE `users`
 SET `firstname` = 'Adrian',
   `lastname` = 'Hess',
