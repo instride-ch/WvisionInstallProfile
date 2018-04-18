@@ -3,4 +3,4 @@
 # use a Twig extension which takes care of loading the service lazily).
 twig:
     globals:
-        language_switcher: '@app.language_switcher'
+        language_switcher: '@AppBundle\Templating\LanguageSwitcher'
