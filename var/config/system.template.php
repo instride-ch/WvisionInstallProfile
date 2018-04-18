@@ -65,7 +65,7 @@ return [
         "default_controller" => "default",
         "default_action" => "default",
         "error_pages" => [
-            "default" => "/error"
+            "default" => "/fehler"
         ],
         "createredirectwhenmoved" => FALSE,
         "allowtrailingslash" => "no",
