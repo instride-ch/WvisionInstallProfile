@@ -30,8 +30,10 @@
         {% do pimcore_head_title().set(document.getTitle()) %}
     {% endif %}
 
-    {% do pimcore_head_title().append('Pimcore GmbH') %}
-    {% do pimcore_head_title().setSeparator(' | ') %}
+    {% if pimcore_website_config('name') is not empty %}
+        {% do pimcore_head_title().append(pimcore_website_config('name')) %}
+        {% do pimcore_head_title().setSeparator(' | ') %}
+    {% endif %}
 
     {# head description #}
     {% if document.getDescription() is not empty %}

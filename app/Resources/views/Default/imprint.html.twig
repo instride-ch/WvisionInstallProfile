@@ -33,7 +33,7 @@
 
                             {% for element in imprintBlock.getElements() %}
                                 <li>
-                                    <a href="#imprint-{{ loop.index }}" data-uk-scroll="offset: 65">
+                                    <a href="#imprint-{{ loop.index }}" class="uk-text-nowrap">
                                         {{ element.getInput('imprintTitle').getData() }}
                                     </a>
                                 </li>

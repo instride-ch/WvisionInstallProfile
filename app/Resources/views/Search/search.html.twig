@@ -8,7 +8,7 @@
             {% if query %}
                 {{ render(controller('lucene_search.controller.frontend.list:getResultAction')) }}
             {% else %}
-                <h3 class="uk-margin-remove">{{ 'app.search.no-results'|trans }}</h3>
+                <h3 class="uk-margin-remove">{{ 'app.fulltext_search.no_results'|trans }}</h3>
             {% endif %}
 
         </div>

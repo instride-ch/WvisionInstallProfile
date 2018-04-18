@@ -16,15 +16,15 @@
                     <a href="#">{{ page.label }}</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
+
                             {% for child in page.pages %}
                                 {% if (child.isVisible and menuRenderer.accept(child)) %}
-
                                     <li class="{{ child.isActive(true) ? 'uk-active' }}">
-                                        <a href="{{ child.href }}" target="{{ child.target }}">Active</a>
+                                        <a href="{{ child.href }}" target="{{ child.target }}">{{ child.label }}</a>
                                     </li>
-
                                 {% endif %}
                             {% endfor %}
+
                         </ul>
                     </div>
                 </li>
