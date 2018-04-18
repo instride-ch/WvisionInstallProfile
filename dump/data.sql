@@ -22,6 +22,8 @@ INSERT INTO `assets` VALUES (12, 3, 'image', 'sunset.jpeg', '/images/', 'image/j
 
 INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 1368522989, 1, 1, 0, '', NULL);
 
+INSERT INTO `properties` VALUES (1, 'document', '/', 'language', 'text', 'de', 1);
+
 UPDATE `users`
 SET `firstname` = 'Adrian',
   `lastname` = 'Hess',
