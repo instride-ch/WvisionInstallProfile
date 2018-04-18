@@ -3,8 +3,8 @@
 return [
     1 => [
         "id" => 1,
-        "name" => "Navigation start node",
-        "description" => "Start node for the navigation",
+        "name" => "Navigation Start Node",
+        "description" => "Start node of the navigation",
         "key" => "navStartNode",
         "type" => "document",
         "data" => "",
