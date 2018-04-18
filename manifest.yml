@@ -6,7 +6,7 @@ files:
         - app/Resources/LuceneSearchBundle
         - src/AppBundle
         - var/config/*
-        - var/user-image/user-2.png
+        - var/user-image/user-1.png
         - web/var/assets
 db:
     data_files:
