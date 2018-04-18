@@ -20,7 +20,7 @@ INSERT INTO `assets` VALUES (10, 3, 'image', 'schloss-moritzburg.jpg', '/images/
 INSERT INTO `assets` VALUES (11, 3, 'image', 'winter-bus.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
 INSERT INTO `assets` VALUES (12, 3, 'image', 'sunset.jpeg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
 
-INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 1368522989, 1, 1, 0, '');
+INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 1368522989, 1, 1, 0, '', NULL);
 
 UPDATE `users`
 SET `firstname` = 'Adrian',
