@@ -4,7 +4,7 @@ return [
     1 => [
         "id" => 1,
         "name" => "app_search",
-        "pattern" => "/(.*)\\/search/",
+        "pattern" => "/^\\/([a-z]{2})\\/search/",
         "reverse" => "/%_locale/search",
         "module" => "AppBundle",
         "controller" => "@AppBundle\\Controller\\SearchController",
