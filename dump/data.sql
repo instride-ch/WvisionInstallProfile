@@ -10,17 +10,17 @@ INSERT INTO `documents_page` VALUES (3, NULL, '@AppBundle\\Controller\\ErrorCont
 
 -- Assets
 INSERT INTO `assets` VALUES (1, 0, 'folder', '', '/', NULL, 1368522989, 1368522989, 1, 1, '', 0);
-INSERT INTO `assets` VALUES (2, 1, 'folder', 'documents', '/', NULL, 1505140576, 1505140576, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (3, 1, 'folder', 'images', '/', NULL, 1505140572, 1505140572, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (4, 2, 'document', 'adobe-pdf.pdf', '/documents/', 'application/pdf', 1505141170, 1505141660, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (5, 2, 'document', 'microsoft-word.docx', '/documents/', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 1505141170, 1505141653, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (6, 2, 'document', 'microsoft-powerpoint.pptx', '/documents/', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 1505141170, 1505141669, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (7, 2, 'document', 'microsoft-excel.xlsx', '/documents/', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 1505141170, 1505141676, 2, 2, 'a:0:{}', 0);
-INSERT INTO `assets` VALUES (8, 3, 'image', 'coast-deer.jpeg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
-INSERT INTO `assets` VALUES (9, 3, 'image', 'lake-mirror.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
-INSERT INTO `assets` VALUES (10, 3, 'image', 'schloss-moritzburg.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
-INSERT INTO `assets` VALUES (11, 3, 'image', 'winter-bus.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
-INSERT INTO `assets` VALUES (12, 3, 'image', 'sunset.jpeg', '/images/', 'image/jpeg', 1505141522, 1505141522, 2, 2, 'a:3:{s:10:\"imageWidth\";i:1920;s:11:\"imageHeight\";i:1080;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
+INSERT INTO `assets` VALUES (2, 1, 'folder', 'documents', '/', NULL, 1505140576, 1505140576, 1, 1, 'a:0:{}', 0);
+INSERT INTO `assets` VALUES (3, 1, 'folder', 'images', '/', NULL, 1505140572, 1505140572, 1, 1, 'a:0:{}', 0);
+INSERT INTO `assets` VALUES (4, 2, 'document', 'muster_excel.xlsx', '/documents/', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 1505141170, 1505141660, 2, 2, 'a:0:{}', 0);
+INSERT INTO `assets` VALUES (5, 2, 'document', 'muster_pdf.pdf', '/documents/', 'application/pdf', 1505141170, 1505141653, 1, 1, 'a:1:{s:19:\"document_page_count\";s:1:\"1\";}', 0);
+INSERT INTO `assets` VALUES (6, 2, 'document', 'muster_powerpoint.pptx', '/documents/', 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 1505141170, 1505141669, 2, 2, 'a:0:{}', 0);
+INSERT INTO `assets` VALUES (7, 2, 'document', 'muster_word.docx', '/documents/', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 1505141170, 1505141676, 2, 2, 'a:0:{}', 0);
+INSERT INTO `assets` VALUES (8, 3, 'image', 'wvision_baum.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 1, 1, 'a:3:{s:10:\"imageWidth\";i:2048;s:11:\"imageHeight\";i:1366;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
+INSERT INTO `assets` VALUES (9, 3, 'image', 'wvision_newyork.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 1, 1, 'a:3:{s:10:\"imageWidth\";i:2048;s:11:\"imageHeight\";i:1366;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
+INSERT INTO `assets` VALUES (10, 3, 'image', 'wvision_pusteblume.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 1, 1, 'a:3:{s:10:\"imageWidth\";i:2048;s:11:\"imageHeight\";i:1366;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
+INSERT INTO `assets` VALUES (11, 3, 'image', 'wvision_windraeder.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 1, 1, 'a:3:{s:10:\"imageWidth\";i:2048;s:11:\"imageHeight\";i:1366;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
+INSERT INTO `assets` VALUES (12, 3, 'image', 'wvision_winter.jpg', '/images/', 'image/jpeg', 1505141522, 1505141522, 1, 1, 'a:3:{s:10:\"imageWidth\";i:2048;s:11:\"imageHeight\";i:1366;s:25:\"imageDimensionsCalculated\";b:1;}', 0);
 
 -- Objects
 INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 1368522989, 1, 1, 0, '', NULL);
