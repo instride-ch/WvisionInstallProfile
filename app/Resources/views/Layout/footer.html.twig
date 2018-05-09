@@ -31,13 +31,17 @@
                     </a>
                 </div>
             </div>
-            <div class="uk-width-expand@s">
-                <h3 class="uk-text-center">Hours</h3>
-                <div class="uk-margin uk-text-center">
-                    Mon – Fri 9 am – 17 pm<br/>
-                    Saturday/Sunday Closed
+            {% if document.getProperty('imprintPage') is instanceof('\\Pimcore\\Model\\Document\\Page') %}
+                {% set imprint = document.getProperty('imprintPage') %}
+
+                <div class="uk-width-expand@s">
+                    <h3 class="uk-text-center">Imprint</h3>
+                    <div class="uk-margin uk-text-center">
+                        <a href="{{ imprint.getFullPath() }}">{{ imprint.getProperty('navigation_name') }}</a><br/>
+                        &copy; {{ pimcore_website_config('name') }}
+                    </div>
                 </div>
-            </div>
+            {% endif %}
         </div>
     </div>
 </div>

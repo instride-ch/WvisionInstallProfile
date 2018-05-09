@@ -28,6 +28,10 @@ INSERT INTO `objects` VALUES (1, 0, 'folder', '', '/', 999999, 1, 1368522989, 13
 -- Properties
 INSERT INTO `properties` VALUES (1, 'document', '/', 'language', 'text', 'de', 1);
 INSERT INTO `properties` VALUES (1, 'document', '/', 'imprintPage', 'document', 2, 1);
+INSERT INTO `properties` VALUES (2, 'document', '/impressum', 'navigation_exclude', 'bool', 1, 0);
+INSERT INTO `properties` VALUES (2, 'document', '/impressum', 'navigation_name', 'text', 'Impressum', 0);
+INSERT INTO `properties` VALUES (2, 'document', '/fehler', 'navigation_exclude', 'bool', 1, 0);
+INSERT INTO `properties` VALUES (2, 'document', '/fehler', 'navigation_name', 'text', 'Fehler', 0);
 
 -- Translations
 INSERT INTO translations_website VALUES ('app.language_switcher.language', 'de', 'Sprache', 1368608505, 1368608505);
