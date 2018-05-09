@@ -13,21 +13,22 @@
 namespace AppBundle\Controller;
 
 use Pimcore\Controller\FrontendController;
+use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends FrontendController
 {
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
-    public function defaultAction()
+    public function defaultAction(): Response
     {
         return $this->renderTemplate('Default/default.html.twig');
     }
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
-    public function imprintAction()
+    public function imprintAction(): Response
     {
         return $this->renderTemplate('Default/imprint.html.twig');
     }

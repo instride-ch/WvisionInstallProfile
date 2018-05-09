@@ -9,7 +9,7 @@ return [
         "language" => "en",
         "validLanguages" => "de",
         "fallbackLanguages" => [
-            "de" => "de_CH"
+            "de" => ""
         ],
         "defaultLanguage" => "de",
         "loginscreencustomimage" => "//www.w-vision.ch/static/img/backend/admin_pimcore5.jpg",

@@ -1,9 +1,9 @@
-#LICENSE
+# LICENSE
 
-##Copyright
-Copyright © 2017 w-vision AG, All rights reserved.
+## Copyright
+Copyright © 2018 w-vision AG. All rights reserved.
 
-##Imprint
+## Imprint
 w-vision AG
 Sandgruebestrasse 4
 6210 Sursee

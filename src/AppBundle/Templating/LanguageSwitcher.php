@@ -36,7 +36,7 @@ class LanguageSwitcher
      * @param Document $document
      * @return array
      */
-    public function getLocalizedLinks(Document $document)
+    public function getLocalizedLinks(Document $document): array
     {
         $translations = $this->documentService->getTranslations($document);
 

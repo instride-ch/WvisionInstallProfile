@@ -13,13 +13,14 @@
 namespace AppBundle\Controller;
 
 use Pimcore\Controller\FrontendController;
+use Symfony\Component\HttpFoundation\Response;
 
 class ErrorController extends FrontendController
 {
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
-    public function errorAction()
+    public function errorAction(): Response
     {
         return $this->renderTemplate('Error/error.html.twig');
     }
